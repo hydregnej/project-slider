@@ -109,7 +109,7 @@
 
 .main__dot:hover,
 .main__slider-img-active_dots {
-	content: url("/icons/dot-start.svg");
+	content: url("../icons/dot-start.svg");
 }
 
 .main__arrow {
