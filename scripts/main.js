@@ -1,14 +1,14 @@
 let images = [
 	{
-		src: "../img/image-0.jpg",
+		src: "./img/image-0.jpg",
 		title: "Rostov-on-Don, Admiral"
 	},
 	{
-		src: "../img/image-1.jpg",
+		src: "./img/image-1.jpg",
 		title: "Sochi Thieves"
 	},
 	{
-		src: "../img/image-2.jpg",
+		src: "./img/image-2.jpg",
 		title: "Rostov-on-Don Patriotic"
 	}
 ]
@@ -64,7 +64,7 @@ function initSlider() {
 
 	function initDots() {
 		images.forEach((img, index) => {
-			let dot = `<img src="../icons/dot.svg" alt="Dot" class="main__dot main__number-slider-${index} ${index === 0 ? "main__slider-img-active main__slider-img-active_dots" : ""}" data-index="${index}">`
+			let dot = `<img src="./icons/dot.svg" alt="Dot" class="main__dot main__number-slider-${index} ${index === 0 ? "main__slider-img-active main__slider-img-active_dots" : ""}" data-index="${index}">`
 			sliderDots.innerHTML += dot
 		})
 		sliderDots.querySelectorAll(".main__dot").forEach(dot => {
