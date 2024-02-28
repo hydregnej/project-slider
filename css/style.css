@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200.. 1000&family=Yeseva+One&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: "Yeseva One", sans-serif;
+}
+
+.main {
+	max-width: 1440px;
+	height: 100vh;
+	margin: 0 auto;
+	background-color: #000;
+}
+
+.main__slider {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 107px 135px 125px;
+}
+
+.main__slider-left {
+	display: flex;
+	flex-direction: column;
+}
+
+.main__h1-block {
+	position: relative;
+
+}
+
+.main__h1 {
+	font-size: 27px;
+	color: #E3B873;
+	text-transform: uppercase;
+}
+
+.main__lane-h1-decoration {
+	position: absolute;
+	left: 182px;
+	top: 40px;
+}
+
+.main__text {
+	font-size: 14px;
+	color: #FFFFFF;
+	line-height: 170%;
+}
+
+.main__text_margin-top-bot {
+	margin-top: 34px;
+	margin-bottom: 42px;
+}
+
+.main__text-block {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 35px 98px;
+	grid-auto-flow: row;
+	grid-template-areas:
+  "main__text-block-1 main__text-block-2"
+  "main__text-block-3 main__text-block-4";
+
+	.main__text-block-1 {
+		grid-area: main__text-block-1;
+	}
+
+	.main__text-block-2 {
+		grid-area: main__text-block-2;
+	}
+
+	.main__text-block-3 {
+		grid-area: main__text-block-3;
+	}
+
+	.main__text-block-4 {
+		grid-area: main__text-block-4;
+	}
+
+	margin-bottom: 100px;
+}
+
+.main__h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #E3B873;
+}
+
+.main__h2_margin-bot {
+	margin-bottom: 8px;
+}
+
+.main__nav-slider {
+	display: flex;
+	gap: 30px;
+}
+
+.main__dot-block {
+	display: flex;
+	gap: 17px;
+}
+
+.main__dot {
+	width: 10px;
+	cursor: pointer;
+}
+
+.main__dot:hover,
+.main__slider-img-active_dots {
+	content: url("/icons/dot-start.svg");
+}
+
+.main__arrow {
+	cursor: pointer;
+}
+
+.main__title-slider {
+	display: flex;
+	gap: 60px;
+}
+
+.main__h3 {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #FFFFFF;
+	opacity: 30%;
+}
+
+.main__h3_slider-titles {
+	padding-bottom: 8px;
+	cursor: pointer;
+}
+
+.main__h3_slider-titles:hover,
+.main__slider-img-active_title {
+	padding-bottom: 7px;
+	color: #E3B873;
+	opacity: 100%;
+	border-bottom: 1px solid #E3B873;
+}
+
+.main__slider-img-item {
+	display: none;
+	width: 680px;
+	height: 483px;
+}
+
+.main__slider-img-active {
+	display: block;
+	margin-top: 45px;
+}
+
+.main__slider-img-active_dots {
+	margin-top: 0;
+}
+
+.main__slider-img-active_title {
+	margin-top: 0;
+
+}
