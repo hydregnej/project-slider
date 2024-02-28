@@ -1,14 +1,14 @@
 let images = [
 	{
-		src: "./img/image-0.jpg",
+		src: "../img/image-0.jpg",
 		title: "Rostov-on-Don, Admiral"
 	},
 	{
-		src: "./img/image-1.jpg",
+		src: "../img/image-1.jpg",
 		title: "Sochi Thieves"
 	},
 	{
-		src: "./img/image-2.jpg",
+		src: "../img/image-2.jpg",
 		title: "Rostov-on-Don Patriotic"
 	}
 ]
