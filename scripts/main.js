@@ -1,15 +1,27 @@
 let images = [
 	{
 		src: "./img/image-0.jpg",
-		title: "Rostov-on-Don, Admiral"
+		title: "Rostov-on-Don, Admiral",
+		cityInfo: "Rostov-on-Don LCD admiral",
+		areaInfo: "81 m2",
+		timeInfo: "3.5 months",
+		costInfo: "Upon request"
 	},
 	{
 		src: "./img/image-1.jpg",
-		title: "Sochi Thieves"
+		title: "Sochi Thieves",
+		cityInfo: "Sochi Thieves",
+		areaInfo: "105 m2",
+		timeInfo: "4 months",
+		costInfo: "Upon request"
 	},
 	{
 		src: "./img/image-2.jpg",
-		title: "Rostov-on-Don Patriotic"
+		title: "Rostov-on-Don Patriotic",
+		cityInfo: "Rostov-on-Don Patriotic",
+		areaInfo: "93 m2",
+		timeInfo: "3 months",
+		costInfo: "Upon request"
 	}
 ]
 
@@ -85,9 +97,21 @@ function initSlider() {
 
 
 	function moveSlider(num) {
+		const currentImage = images[num]
+		const cityInfo = document.querySelector(".main__text-block-1 .main__text")
+		const areaInfo = document.querySelector(".main__text-block-2 .main__text")
+		const timeInfo = document.querySelector(".main__text-block-3 .main__text")
+		const costInfo = document.querySelector(".main__text-block-4 .main__text")
+
+		if (currentImage) {
+			cityInfo.textContent = currentImage.cityInfo
+			areaInfo.textContent = currentImage.areaInfo
+			timeInfo.textContent = currentImage.timeInfo
+			costInfo.textContent = currentImage.costInfo
+		}
+
 		sliderImage.querySelector(".main__slider-img-active").classList.remove("main__slider-img-active")
 		sliderImage.querySelector(".main__number-slider-" + num).classList.add("main__slider-img-active")
-		// changeTitle(num)
 	}
 
 
